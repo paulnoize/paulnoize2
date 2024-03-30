@@ -11,8 +11,8 @@
   
   .planet {
 	position: absolute;
-	width: 26px;
-	height: 26px;
+    width: 1.5vw; /* Usando viewport width */
+    height: 1.5vw; /* Usando viewport width */
 	background-color: red; 
 	border-radius: 50%; 
 	transform-origin: center;
