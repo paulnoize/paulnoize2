@@ -11,13 +11,12 @@
   
   .planet {
 	position: absolute;
-    width: 1.5vw; /* Usando viewport width */
-    height: 1.5vw; /* Usando viewport width */
+	width: 26px;
+	height: 26px;
 	background-color: red; 
 	border-radius: 50%; 
 	transform-origin: center;
 	animation: orbit 10s linear infinite; 
-	
   }
   
   @keyframes orbit {
