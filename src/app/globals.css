@@ -14,11 +14,11 @@
   }
 }
 
-html, body {
-  user-select: none;
-}
-
 body {
-  background: #000000;
+  display: flex; /* Usa flexbox */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 100vh; /* Ocupa toda la altura de la ventana del navegador */
+  background: #000000; /* Establece el color de fondo */
+  user-select: none; /* Evita la selección de texto */
 }
-
