@@ -19,7 +19,51 @@ export default function Home() {
       <div className="w-full flex items-center justify-center">
         <div className="orbit"></div>
         <div className="planet"></div>
-       
+        <Swiper
+          className="w-full"
+          modules={[EffectFade, Autoplay]} 
+          effect="fade" 
+        
+          autoplay={{ delay: 3000 }} 
+          loop={true}
+        >
+          <SwiperSlide>
+            <div className="w-full flex items-center justify-center">
+              <Image
+                src="/paul.jpg"
+                alt="Paul"
+                width={imageWidth}
+                height={imageHeight}
+                priority
+                className="rounded-full"
+              />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="w-full flex items-center justify-center">
+              <Image
+                src="/paul2.jpg"
+                alt="Paul"
+                width={imageWidth}
+                height={imageHeight}
+                priority
+                className="rounded-full"
+              />          
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="w-full flex items-center justify-center">
+              <Image
+                src="/paul3.jpg"
+                alt="Paul"
+                width={imageWidth}
+                height={imageHeight}
+                priority
+                className="rounded-full"
+              />          
+            </div>
+          </SwiperSlide>
+        </Swiper>
       </div>
     </main>
   );
