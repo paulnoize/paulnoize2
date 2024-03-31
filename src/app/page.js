@@ -14,11 +14,15 @@ export default function Home() {
   const imageWidth = 240;
   const imageHeight = 240;
 
+
   return (
     <main className="flex items-center justify-center h-screen">
       <div className="w-full flex items-center justify-center">
         <div className="orbit"></div>
-        <div className="planet"></div>
+        <div className="planet">
+        <img src="./skeleton-logo.svg" alt="Planeta" />
+
+        </div>
         <Swiper
           className="w-full"
           modules={[EffectFade, Autoplay]} 

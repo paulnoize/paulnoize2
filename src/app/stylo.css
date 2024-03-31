@@ -1,29 +1,49 @@
 .orbit {
-	position: absolute;
-	width: 300px;
-	height: 300px;
-	border: 0.5px solid #505050; 
-	border-radius: 50%; 
-	top: 50vh;
-	left: 50%;
-	transform: translate(-50%, -50%);
+position: absolute;
+width: 300px;
+height: 300px;
+border: 1px solid #393939; 
+border-radius: 50%; 
+top: 50vh;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.planet {
+position: absolute;
+width: 26px;
+height: 26px;
+background-color: red; 
+border-radius: 50%; 
+transform-origin: center;
+animation: orbit 10s linear infinite; 
+
+}
+
+
+
+@keyframes orbit {
+from {
+transform: rotate(0deg) translateX(150px) rotate(0deg);
+}
+to {
+transform: rotate(360deg) translateX(150px) rotate(-360deg);
+}
+}
+
+.planet img,
+.planet svg {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  animation: rotate360 8s linear infinite; /* Aplicamos la animación de rotación */
+}
+
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
   }
-  
-  .planet {
-	position: absolute;
-	width: 26px;
-	height: 26px;
-	background-color: red; 
-	border-radius: 50%; 
-	transform-origin: center;
-	animation: orbit 10s linear infinite; 
+  to {
+    transform: rotate(360deg);
   }
-  
-  @keyframes orbit {
-	from {
-	  transform: rotate(0deg) translateX(150px) rotate(0deg);
-	}
-	to {
-	  transform: rotate(360deg) translateX(150px) rotate(-360deg);
-	}
-  }
+}
