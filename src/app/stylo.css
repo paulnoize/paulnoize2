@@ -6,10 +6,10 @@ border-radius: 9999px;
 
 transform: translate(-50%, -50%);
 background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box,
-linear-gradient(to right, rgb(23, 23, 23), rgb(23, 23, 23), rgb(145, 0, 0)) border-box;
+linear-gradient(to right, rgb(30, 30, 30), rgb(30, 30, 30), rgb(126, 0, 0)) border-box;
 border-radius: 50em;
 border: 0.5px solid transparent;
-animation: rotate3602 8s linear infinite; 
+animation: rotate3602 10s linear infinite; 
 
 }
 
@@ -20,7 +20,7 @@ height: 26px;
 background-color: rgb(187, 0, 0); 
 border-radius: 50%; 
 transform-origin: center;
-animation: orbit 8s linear infinite; 
+animation: orbit 10s linear infinite; 
 
 }
 
@@ -37,26 +37,28 @@ transform: rotate(360deg) translateX(150px) rotate(-360deg);
 
 .planet img,
 .planet svg {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  animation: rotate360 8s linear infinite; 
+width: 100%;
+height: 100%;
+border-radius: 50%;
+animation: rotate360 10s linear infinite; 
+opacity: 0.8;
 }
 
 @keyframes rotate360 {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(-360deg);
-  }
+from {
+transform: rotate(0deg);
+}
+to {
+transform: rotate(-360deg);
+}
 }
 
 @keyframes rotate3602 {
-	from {
-	  transform: rotate(0deg);
-	}
-	to {
-	  transform: rotate(360deg);
-	}
-  }
+from {
+transform: rotate(0deg);
+}
+to {
+transform: rotate(360deg);
+}
+}
+

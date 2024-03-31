@@ -63,7 +63,7 @@ export default function Home() {
                 width={imageWidth}
                 height={imageHeight}
                 priority
-                className="rounded-full"
+                className="rounded-full "
               />          
             </div>
           </SwiperSlide>
