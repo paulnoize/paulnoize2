@@ -6,7 +6,7 @@ border-radius: 9999px;
 
 transform: translate(-50%, -50%);
 background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box,
-linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0), rgb(145, 41, 0)) border-box;
+linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0), rgb(145, 0, 0)) border-box;
 border-radius: 50em;
 border: 0.5px solid transparent;
 animation: rotate3602 8s linear infinite; 
@@ -17,7 +17,7 @@ animation: rotate3602 8s linear infinite;
 position: absolute;
 width: 26px;
 height: 26px;
-background-color: rgb(187, 53, 0); 
+background-color: rgb(187, 0, 0); 
 border-radius: 50%; 
 transform-origin: center;
 animation: orbit 8s linear infinite; 
