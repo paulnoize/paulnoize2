@@ -1,32 +1,42 @@
-.orbit {
+.orbit-logo-skltn {
 position: absolute;
 width: 300px;
 height: 300px;
 border-radius: 9999px;
-
 transform: translate(-50%, -50%);
 background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box,
 linear-gradient(to right, rgb(30, 30, 30), rgb(30, 30, 30), rgb(126, 0, 0)) border-box;
 border-radius: 50em;
 border: 0.5px solid transparent;
-animation: rotate3602 10s linear infinite; 
-
+animation: rotate360-orbit 10s linear infinite; 
 }
 
-.planet {
+
+@keyframes pulse {
+    0% {
+      box-shadow:  0px 0px 70px 10px  rgba(255, 0, 0, 0.8);
+    }
+    50% {
+      box-shadow:  0px 0px 70px 12px  rgba(255, 0, 0, 1);
+    }
+    100% {
+      box-shadow:  0px 0px 70px 10px  rgba(255, 0, 0, 0.8);
+    }
+  }
+
+
+.planet-logo-skltn {
 position: absolute;
 width: 26px;
 height: 26px;
 background-color: rgb(187, 0, 0); 
 border-radius: 50%; 
 transform-origin: center;
-animation: orbit 10s linear infinite; 
-
+animation: orbit-logo-skltn-kfm 10s linear infinite, pulse 2s infinite; 
+z-index: 999;
 }
 
-
-
-@keyframes orbit {
+@keyframes orbit-logo-skltn-kfm {
 from {
 transform: rotate(0deg) translateX(150px) rotate(0deg);
 }
@@ -35,15 +45,19 @@ transform: rotate(360deg) translateX(150px) rotate(-360deg);
 }
 }
 
-.planet img,
-.planet svg {
+
+.planet-logo-skltn img,
+.planet-logo-skltn svg {
 width: 100%;
 height: 100%;
 border-radius: 50%;
-animation: rotate360 10s linear infinite; 
+animation: rotate360-ico 10s linear infinite; 
 }
 
-@keyframes rotate360 {
+
+
+
+@keyframes rotate360-ico {
 from {
 transform: rotate(0deg);
 }
@@ -52,7 +66,8 @@ transform: rotate(-360deg);
 }
 }
 
-@keyframes rotate3602 {
+
+@keyframes rotate360-orbit {
 from {
 transform: rotate(0deg);
 }

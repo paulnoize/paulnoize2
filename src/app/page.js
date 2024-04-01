@@ -18,16 +18,18 @@ export default function Home() {
   return (
     <main className="flex items-center justify-center h-screen">
       <div className="w-full flex items-center justify-center">
-        <div className="orbit"></div>
-        <div className="planet">
-        <img src="./skeleton-logo.svg" alt="Planeta" />
 
+        <div className="orbit-logo-skltn"></div>
+
+        <div className="planet-logo-skltn">
+          <img src="./skeleton-logo.svg" alt="Logo Skeleton"/>
         </div>
+
+
         <Swiper
           className="w-full"
           modules={[EffectFade, Autoplay]} 
           effect="fade" 
-        
           autoplay={{ delay: 3000 }} 
           loop={true}
         >
@@ -35,7 +37,7 @@ export default function Home() {
             <div className="w-full flex items-center justify-center">
               <Image
                 src="/paul.jpg"
-                alt="Paul"
+                alt="Imagen Paul Pineda"
                 width={imageWidth}
                 height={imageHeight}
                 priority
@@ -47,7 +49,7 @@ export default function Home() {
             <div className="w-full flex items-center justify-center">
               <Image
                 src="/paul2.jpg"
-                alt="Paul"
+                alt="Imagen Paul Pineda"
                 width={imageWidth}
                 height={imageHeight}
                 priority
@@ -59,7 +61,7 @@ export default function Home() {
             <div className="w-full flex items-center justify-center">
               <Image
                 src="/paul3.jpg"
-                alt="Paul"
+                alt="Imagen Paul Pineda"
                 width={imageWidth}
                 height={imageHeight}
                 priority
@@ -68,6 +70,7 @@ export default function Home() {
             </div>
           </SwiperSlide>
         </Swiper>
+
       </div>
     </main>
   );
